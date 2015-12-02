@@ -29,9 +29,15 @@ h3 {
 	margin-top: 650px
 }
 
+p {
+	text-align: center;
+	color: gray;
+	font-size: 18px;
+}
+
 #search-form {
 	text-align: center;
-	margin-top: 10px;
+	margin: 10px auto ;
 }
 
 #query {
@@ -47,11 +53,17 @@ h3 {
 	height: 31px;
 }
 
+#results {
+	width: 1400px;
+	margin: 20px 300px 0px;
+}
+
 .cover {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     display: inline-block;
     background-size: cover;
+    margin: 5px;
 }
 .cover:hover {
     cursor: pointer;
