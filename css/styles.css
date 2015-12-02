@@ -24,20 +24,22 @@ body {
 h3 {
 	color: #2ecc71;
 	font-family: 'Roboto';
-	font-size: 24px;
-}
-
-.search {
+	font-size: 36px;
 	text-align: center;
-	margin-top: 670px;
+	margin-top: 650px
 }
 
-#answer {
+#search-form {
+	text-align: center;
+	margin-top: 10px;
+}
+
+#query {
 	width: 500px;
 	height: 25px;
 } 
 
-#submit {
+#search {
 	background-color: #e74c3c;
 	color: white;
 	border: #e74c3c;
@@ -45,6 +47,15 @@ h3 {
 	height: 31px;
 }
 
-.hidden {
-	display: none;
+.cover {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    background-size: cover;
+}
+.cover:hover {
+    cursor: pointer;
+}
+.cover.playing {
+    border: 5px solid #e45343;
 }
