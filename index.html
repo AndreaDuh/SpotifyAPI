@@ -6,21 +6,34 @@
 
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/boostrap.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700,900' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div class="header">
+<!-- HEADER IMAGE -->
+	<div class="row">
+	  <div class="container-fluid">
+		<div class="header"></div>
+	  </div>
 	</div>
-
-	<div id="logo"><h1>SPOTIFY THIS</h1></div>
-	
-	<h3>SEARCH AN ARTIST TO FIND THEIR ALBUMS!</h3>
-	<p>Simply search for an artist and press submit. Once the artist is found a list of their albums will display. <br>Click on the album image and a 30 second preview will play!</p>
-	<form id="search-form">
-        <input type="text" id="query" value="" placeholder="Ex. Beyonce"/>
-        <input type="submit" id="search" value="Search"/>
-   	</form>
-    <div id="results"></div>
+<!-- SEARCH FORM -->	
+	<div class="row">
+	  <div class="container col-xs-12">
+		<h3>SEARCH AN ARTIST TO FIND THEIR ALBUMS!</h3>
+		<p>Simply search for an artist and press submit. Once the artist is found a list of their albums will display. <br>Click on the album image and a 30 second preview will play!</p>
+		<form id="search-form">
+	        <input type="text" id="query" value="" placeholder="Ex. Beyonce"/>
+	        <input type="submit" id="search" value="Search"/>
+	   	</form>
+	  </div>
+	 </div>
+<!-- RESULTS -->	
+	<div class="row">
+	  <div class="container">
+    	<div id="results" class="col-xs-12"></div>
+      <div>
+	</div>
 
 <script id="results-template" type="text/x-handlebars-template">
     {{#each albums.items}}
@@ -28,7 +41,9 @@
     {{/each}}
 </script>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="js/app.js"></script>	
+<script src="js/app.js"></script>
+<script src="js/bootstrap.js"></script>	
+<script src="js/bootstrap.min.js"></script>
 <script src="js/handlebars.min.js"></script>
 </body>
 </html>
